@@ -1,0 +1,143 @@
+[debug] [2025-11-03T10:58:49.686Z] ----------------------------------------------------------------------
+[debug] [2025-11-03T10:58:49.689Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\athen\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2025-11-03T10:58:49.689Z] CLI Version:   14.23.0
+[debug] [2025-11-03T10:58:49.689Z] Platform:      win32
+[debug] [2025-11-03T10:58:49.689Z] Node Version:  v24.11.0
+[debug] [2025-11-03T10:58:49.689Z] Time:          Mon Nov 03 2025 17:58:49 GMT+0700 (Western Indonesia Time)
+[debug] [2025-11-03T10:58:49.690Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-11-03T10:58:49.874Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-11-03T10:58:49.875Z] > authorizing via signed-in user (tt9365453@gmail.com)
+[debug] [2025-11-03T10:58:49.875Z] [iam] checking project tester-318ce for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-11-03T10:58:49.876Z] Checked if tokens are valid: true, expires at: 1762168556659
+[debug] [2025-11-03T10:58:49.876Z] Checked if tokens are valid: true, expires at: 1762168556659
+[debug] [2025-11-03T10:58:49.877Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/tester-318ce:testIamPermissions [none]
+[debug] [2025-11-03T10:58:49.877Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/tester-318ce:testIamPermissions x-goog-quota-user=projects/tester-318ce
+[debug] [2025-11-03T10:58:49.877Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/tester-318ce:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-11-03T10:58:50.218Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/tester-318ce:testIamPermissions 200
+[debug] [2025-11-03T10:58:50.218Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/tester-318ce:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-11-03T10:58:50.219Z] Checked if tokens are valid: true, expires at: 1762168556659
+[debug] [2025-11-03T10:58:50.219Z] Checked if tokens are valid: true, expires at: 1762168556659
+[debug] [2025-11-03T10:58:50.219Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/tester-318ce [none]
+[debug] [2025-11-03T10:58:50.653Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/tester-318ce 200
+[debug] [2025-11-03T10:58:50.653Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/tester-318ce {"projectId":"tester-318ce","projectNumber":"462868756407","displayName":"tester","name":"projects/tester-318ce","resources":{"hostingSite":"tester-318ce","realtimeDatabaseInstance":"tester-318ce-default-rtdb"},"state":"ACTIVE","etag":"1_5c633ff8-f4a8-42e6-8979-8af24b52fe5d"}
+[info] 
+[info] === Deploying to 'tester-318ce'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2025-11-03T10:58:50.662Z] Checked if tokens are valid: true, expires at: 1762168556659
+[debug] [2025-11-03T10:58:50.662Z] Checked if tokens are valid: true, expires at: 1762168556659
+[debug] [2025-11-03T10:58:50.662Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/tester-318ce/versions [none]
+[debug] [2025-11-03T10:58:50.662Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/tester-318ce/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2025-11-03T10:58:52.321Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/tester-318ce/versions 200
+[debug] [2025-11-03T10:58:52.321Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/tester-318ce/versions {"name":"projects/462868756407/sites/tester-318ce/versions/681accc2087c18aa","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[tester-318ce]: beginning deploy... 
+[info] i  hosting[tester-318ce]: found 94895 files in . 
+[debug] [2025-11-03T10:59:08.280Z] [hosting] uploading with 200 concurrency
+[debug] [2025-11-03T10:59:08.280Z] [hosting] hash cache [] not populated
+[debug] [2025-11-03T10:59:08.315Z] Error: EBUSY: resource busy or locked, open 'C:\Users\athen\ntuser.dat.LOG2'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-03T10:59:08.317Z] Error: EBUSY: resource busy or locked, open 'C:\Users\athen\NTUSER.DAT'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-03T10:59:08.320Z] Error: EBUSY: resource busy or locked, open 'C:\Users\athen\ntuser.dat.LOG1'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-03T10:59:28.076Z] ----------------------------------------------------------------------
+[debug] [2025-11-03T10:59:28.078Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\athen\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2025-11-03T10:59:28.078Z] CLI Version:   14.23.0
+[debug] [2025-11-03T10:59:28.079Z] Platform:      win32
+[debug] [2025-11-03T10:59:28.079Z] Node Version:  v24.11.0
+[debug] [2025-11-03T10:59:28.079Z] Time:          Mon Nov 03 2025 17:59:28 GMT+0700 (Western Indonesia Time)
+[debug] [2025-11-03T10:59:28.079Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-11-03T10:59:28.271Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-11-03T10:59:28.272Z] > authorizing via signed-in user (tt9365453@gmail.com)
+[debug] [2025-11-03T10:59:28.272Z] [iam] checking project tester-318ce for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-11-03T10:59:28.273Z] Checked if tokens are valid: true, expires at: 1762168556659
+[debug] [2025-11-03T10:59:28.273Z] Checked if tokens are valid: true, expires at: 1762168556659
+[debug] [2025-11-03T10:59:28.274Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/tester-318ce:testIamPermissions [none]
+[debug] [2025-11-03T10:59:28.274Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/tester-318ce:testIamPermissions x-goog-quota-user=projects/tester-318ce
+[debug] [2025-11-03T10:59:28.274Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/tester-318ce:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-11-03T10:59:28.610Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/tester-318ce:testIamPermissions 200
+[debug] [2025-11-03T10:59:28.611Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/tester-318ce:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-11-03T10:59:28.611Z] Checked if tokens are valid: true, expires at: 1762168556659
+[debug] [2025-11-03T10:59:28.611Z] Checked if tokens are valid: true, expires at: 1762168556659
+[debug] [2025-11-03T10:59:28.611Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/tester-318ce [none]
+[debug] [2025-11-03T10:59:28.998Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/tester-318ce 200
+[debug] [2025-11-03T10:59:28.999Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/tester-318ce {"projectId":"tester-318ce","projectNumber":"462868756407","displayName":"tester","name":"projects/tester-318ce","resources":{"hostingSite":"tester-318ce","realtimeDatabaseInstance":"tester-318ce-default-rtdb"},"state":"ACTIVE","etag":"1_5c633ff8-f4a8-42e6-8979-8af24b52fe5d"}
+[info] 
+[info] === Deploying to 'tester-318ce'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2025-11-03T10:59:29.009Z] Checked if tokens are valid: true, expires at: 1762168556659
+[debug] [2025-11-03T10:59:29.009Z] Checked if tokens are valid: true, expires at: 1762168556659
+[debug] [2025-11-03T10:59:29.009Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/tester-318ce/versions [none]
+[debug] [2025-11-03T10:59:29.009Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/tester-318ce/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2025-11-03T10:59:30.178Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/tester-318ce/versions 200
+[debug] [2025-11-03T10:59:30.178Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/tester-318ce/versions {"name":"projects/462868756407/sites/tester-318ce/versions/8a7e9d2b77b36380","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[tester-318ce]: beginning deploy... 
+[info] i  hosting[tester-318ce]: found 94895 files in . 
+[debug] [2025-11-03T10:59:43.348Z] [hosting] uploading with 200 concurrency
+[debug] [2025-11-03T10:59:43.349Z] [hosting] hash cache [] not populated
+[debug] [2025-11-03T10:59:43.380Z] Error: EBUSY: resource busy or locked, open 'C:\Users\athen\ntuser.dat.LOG2'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-03T10:59:43.382Z] Error: EBUSY: resource busy or locked, open 'C:\Users\athen\NTUSER.DAT'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-03T10:59:43.383Z] Error: EBUSY: resource busy or locked, open 'C:\Users\athen\ntuser.dat.LOG1'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-03T11:01:32.878Z] ----------------------------------------------------------------------
+[debug] [2025-11-03T11:01:32.880Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\athen\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting --debug
+[debug] [2025-11-03T11:01:32.881Z] CLI Version:   14.23.0
+[debug] [2025-11-03T11:01:32.881Z] Platform:      win32
+[debug] [2025-11-03T11:01:32.881Z] Node Version:  v24.11.0
+[debug] [2025-11-03T11:01:32.881Z] Time:          Mon Nov 03 2025 18:01:32 GMT+0700 (Western Indonesia Time)
+[debug] [2025-11-03T11:01:32.881Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-11-03T11:01:33.066Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-11-03T11:01:33.068Z] > authorizing via signed-in user (tt9365453@gmail.com)
+[debug] [2025-11-03T11:01:33.069Z] [iam] checking project tester-318ce for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-11-03T11:01:33.070Z] Checked if tokens are valid: false, expires at: 1762168556659
+[debug] [2025-11-03T11:01:33.072Z] Checked if tokens are valid: false, expires at: 1762168556659
+[debug] [2025-11-03T11:01:33.073Z] > refreshing access token with scopes: []
+[debug] [2025-11-03T11:01:33.080Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-11-03T11:01:33.083Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-11-03T11:01:33.251Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-11-03T11:01:33.251Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-11-03T11:01:33.258Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/tester-318ce:testIamPermissions [none]
+[debug] [2025-11-03T11:01:33.259Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/tester-318ce:testIamPermissions x-goog-quota-user=projects/tester-318ce
+[debug] [2025-11-03T11:01:33.259Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/tester-318ce:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-11-03T11:01:34.509Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/tester-318ce:testIamPermissions 200
+[debug] [2025-11-03T11:01:34.510Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/tester-318ce:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-11-03T11:01:34.516Z] Checked if tokens are valid: true, expires at: 1762171292253
+[debug] [2025-11-03T11:01:34.517Z] Checked if tokens are valid: true, expires at: 1762171292253
+[debug] [2025-11-03T11:01:34.518Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/tester-318ce [none]
+[debug] [2025-11-03T11:01:35.197Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/tester-318ce 200
+[debug] [2025-11-03T11:01:35.198Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/tester-318ce {"projectId":"tester-318ce","projectNumber":"462868756407","displayName":"tester","name":"projects/tester-318ce","resources":{"hostingSite":"tester-318ce","realtimeDatabaseInstance":"tester-318ce-default-rtdb"},"state":"ACTIVE","etag":"1_5c633ff8-f4a8-42e6-8979-8af24b52fe5d"}
+[info] 
+[info] === Deploying to 'tester-318ce'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2025-11-03T11:01:35.206Z] Checked if tokens are valid: true, expires at: 1762171292253
+[debug] [2025-11-03T11:01:35.206Z] Checked if tokens are valid: true, expires at: 1762171292253
+[debug] [2025-11-03T11:01:35.207Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/tester-318ce/versions [none]
+[debug] [2025-11-03T11:01:35.208Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/tester-318ce/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2025-11-03T11:01:36.370Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/tester-318ce/versions 200
+[debug] [2025-11-03T11:01:36.371Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/tester-318ce/versions {"name":"projects/462868756407/sites/tester-318ce/versions/e69ae1c4e3f8e02f","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[tester-318ce]: beginning deploy... 
+[info] i  hosting[tester-318ce]: found 94894 files in . 
+[debug] [2025-11-03T11:01:49.510Z] [hosting] uploading with 200 concurrency
+[debug] [2025-11-03T11:01:49.512Z] [hosting] hash cache [] not populated
+[debug] [2025-11-03T11:01:49.545Z] Error: EBUSY: resource busy or locked, open 'C:\Users\athen\ntuser.dat.LOG1'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-03T11:01:49.547Z] Error: EBUSY: resource busy or locked, open 'C:\Users\athen\ntuser.dat.LOG2'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-03T11:01:49.549Z] Error: EBUSY: resource busy or locked, open 'C:\Users\athen\NTUSER.DAT'
+[error] 
+[error] Error: An unexpected error has occurred.
